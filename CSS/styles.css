@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    background-color: azure;
+}
+
+.banner {
+    background-color: rgb(213, 163, 103);
+    text-align: center;
+    padding: 2%;
+    color: white;
+    margin-bottom: 3%;
+}
+
+:root {
+    --color-1: rgb(213, 163, 103); 
+}
+
+div.card {
+    background-color: #ffffff; 
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    padding: 16px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), 
+                box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), 
+                border-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+div.card:hover {
+    transform: translateY(-8px);
+    border-color: var(--color-1);
+    box-shadow: 0 14px 28px rgba(213, 163, 103, 0.35);
+}
+
+div.card h2 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-top: 14px;
+    margin-bottom: 8px;
+    color: var(--color-1);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+div.card p {
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+    color: #555555;
+    line-height: 1.3;
+}
+
+div.card p strong {
+    color: #111111;
+}
+
+div.card p.reproducciones {
+    color: #1db954; 
+    font-weight: 700;
+    margin-top: auto;
+}
+
+.reproducciones {
+    color: #1db954; 
+    font-weight: 700;
+    margin-top: auto;
+}
+
+.titulo-seccion {
+    color: var(--color-1);
+}
+
+.tarjeta-interactiva {
+    cursor: pointer;
+    background-color: #f8f9fa !important;
+}
+
+.img-album-portada {
+    height: 180px;
+    object-fit: cover;
+}
+
+.img-colab-perfil {
+    height: 140px;
+    object-fit: cover;
+}
+
+.reproductor-spotify {
+    width: 100%;
+    height: 152px;
+    border: 0;
+    border-radius: 12px;
+}
+
+.logo-nav {
+    width: 35px;
+    height: 35px;
+}
